@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cbrRate
+    
+app:
+  cache:
+    size: 365
+  rest:
+    api:
+      prefix: /api    
+    
+cbr:
+  url: "https://cbr.ru/scripts/XML_daily.asp"
