@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 8101
 
 spring:
   application:
-    name: cbrrate
+    name: cbr
     
 app:
   cache:
@@ -20,4 +20,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8079/eureka
+      defaultZone: http://localhost:8100/eureka

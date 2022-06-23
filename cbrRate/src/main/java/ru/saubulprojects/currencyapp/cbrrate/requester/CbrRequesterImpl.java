@@ -8,6 +8,7 @@ import java.net.http.HttpResponse;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
+import ru.saubulprojects.currencyapp.cbrrate.exception.RequesterException;
 
 @Service
 @Slf4j

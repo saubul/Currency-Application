@@ -1,0 +1,21 @@
+server:
+  port: 8102
+
+spring:
+  application:
+    name: moex
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+
+app:
+  rest:
+    api:
+      prefix: /api
+      
+moex:
+  url: "https://www.moex.com/export/derivatives/currency-rate.aspx?language=ru&"

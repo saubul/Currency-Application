@@ -1,4 +1,4 @@
-package ru.saubulprojects.currencyapp.cbrrate.requester;
+package ru.saubulprojects.currencyapp.cbrrate.exception;
 
 public class RequesterException extends RuntimeException{
 
