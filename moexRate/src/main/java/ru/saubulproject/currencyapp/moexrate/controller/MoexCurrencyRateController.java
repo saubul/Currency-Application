@@ -29,6 +29,9 @@ public class MoexCurrencyRateController {
 													@DateTimeFormat(pattern = "yyyy-MM-dd") @PathVariable("date") LocalDate date) {
 		log.info("getCurrencyRate. Currency: {}, date: {}", currency, date);
 		CurrencyRate currencyRate = moexCurrencyRateService.getCurrencyRate(currency, date);
+		if(currencyRate == null) {
+			return new ResponseEntity<>(currencyRate, HttpStatus.NO_CONTENT);
+		}
 		log.info("Currency rate: {}", currencyRate);
 		return new ResponseEntity<>(currencyRate, HttpStatus.OK);
 	}

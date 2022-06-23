@@ -26,7 +26,7 @@ public class MoexCurrencyRateParserImpl implements MoexCurrencyRateParser {@Over
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document doc = db.parse(new InputSource(new StringReader(rateAsXml)));
 			
-			doc.normalize();
+			//doc.normalize();
 			
 			NodeList nodeList = doc.getElementsByTagName("rate");
 			CurrencyRate currencyRate = null;

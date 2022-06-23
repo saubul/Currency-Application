@@ -1,6 +1,5 @@
 package ru.saubulproject.currencyapp.moexrate.service;
 
-import java.net.URI;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -34,7 +33,9 @@ public class MoexCurrencyRateService {
 									DATE_FORMATTER.format(date), 
 									DATE_FORMATTER.format(date));
 		CurrencyRate currencyRate = moexCurrencyRateParser.parse(moexRequester.getRateAsXml(url));
-		currencyRate.setCharCode(currency);
+		if(currencyRate != null) {
+			currencyRate.setCharCode(currency);
+		}
 		return currencyRate;
 	}
 	
