@@ -1,20 +1,18 @@
-server:
-  port: 8080
-
 spring:
   application:
-    name: cbrrate
-    
+    name: currencyrateclient
+
+server:
+  port: 8081
+  
 app:
-  cache:
-    size: 365
   rest:
     api:
-      prefix: /api    
-    
-cbr:
-  url: "https://cbr.ru/scripts/XML_daily.asp"
-  
+      prefix: /api
+      
+cbr-rate-client:
+  url: "http://CBRRATE/api/v1/currencyRate"
+      
 eureka:
   client:
     register-with-eureka: true

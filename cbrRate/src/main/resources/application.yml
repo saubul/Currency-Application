@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cbrRate
+    name: cbrrate
     
 app:
   cache:
@@ -14,3 +14,10 @@ app:
     
 cbr:
   url: "https://cbr.ru/scripts/XML_daily.asp"
+  
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8079/eureka
