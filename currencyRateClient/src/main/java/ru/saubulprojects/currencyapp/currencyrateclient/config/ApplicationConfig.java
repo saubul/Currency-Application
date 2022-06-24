@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-@EnableConfigurationProperties(CbrRateClientConfig.class)
+@EnableConfigurationProperties({CbrRateClientConfig.class, MoexRateClientConfig.class})
 public class ApplicationConfig {
 	
 	@LoadBalanced

@@ -1,7 +1,7 @@
 package ru.saubulprojects.currencyapp.currencyrateclient.model;
 
 public enum RateType {
-	CBR("cbr");
+	CBR("cbr"), MOEX("moex");
 
 	String serviceName;	
 	

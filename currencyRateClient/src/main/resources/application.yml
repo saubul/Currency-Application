@@ -11,11 +11,14 @@ app:
       prefix: /api
       
 cbr-rate-client:
-  url: "http://CBRRATE/api/v1/currencyRate"
+  url: "http://CBR/api/v1/currencyRate"
+      
+moex-rate-client:
+  url: "http://MOEX/api/v1/currencyRate"      
       
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8079/eureka
+      defaultZone: http://localhost:8100/eureka
