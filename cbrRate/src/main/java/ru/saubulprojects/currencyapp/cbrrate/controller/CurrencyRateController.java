@@ -26,7 +26,7 @@ public class CurrencyRateController {
 	
 	@GetMapping("/currencyRate/{currency}/{date}")
 	public HttpEntity<CurrencyRate> getCurrencyRate(@PathVariable("currency") String currency,
-										@DateTimeFormat(pattern = "dd-MM-yyyy") @PathVariable("date") LocalDate date)	{
+										@DateTimeFormat(pattern = "yyyy-MM-dd") @PathVariable("date") LocalDate date)	{
 		log.info("getCurrencyRate, currency: {}, date: {}", currency, date);
 		CurrencyRate currencyRate = currencyRateService.getCurrencyRate(currency, date);
 		log.info("Rate: {}", currencyRate);

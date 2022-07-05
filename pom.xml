@@ -57,5 +57,6 @@
   <module>currencyRateClient</module>
   <module>eureka</module>
   <module>moexRate</module>
+  <module>currencytelbot</module>
   </modules>
 </project>

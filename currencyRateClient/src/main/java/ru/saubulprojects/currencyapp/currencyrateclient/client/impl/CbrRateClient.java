@@ -19,7 +19,7 @@ import ru.saubulprojects.currencyapp.currencyrateclient.model.CurrencyRate;
 @Slf4j
 public class CbrRateClient implements RateClient{
 	
-	private final static String DATE_FORMAT = "dd-MM-yyyy";
+	private final static String DATE_FORMAT = "yyyy-MM-dd";
 	private final static DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern(DATE_FORMAT);
 	
 	private final HttpClient httpClient;

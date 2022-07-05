@@ -25,7 +25,7 @@ public class CurrencyRateEndpointController {
 	@GetMapping("/currencyRate/{type}/{currency}/{date}")
 	public CurrencyRate getCurrencyRate(@PathVariable("type") RateType type,
 										@PathVariable("currency") String currency,
-										@DateTimeFormat(pattern = "dd-MM-yyyy") @PathVariable("date") LocalDate date) {
+										@DateTimeFormat(pattern = "yyyy-MM-dd") @PathVariable("date") LocalDate date) {
 		log.info("getCurrencyRate, currency:{}, date:{}", currency, date);
 		CurrencyRate currencyRate = currencyRateEndpointService.getCurrencyRate(type, currency, date);
 		log.info("Rate: {}", currencyRate);

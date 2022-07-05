@@ -1,0 +1,19 @@
+server:
+  port: 0
+  
+spring:
+  application:
+    name: telegrambot
+    
+bot:
+  username: SaubulCurrencyBot
+  
+source:
+  endpoint: "http://CURRENCYRATECLIENT/api/v1/currencyRate"
+  
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8100/eureka

@@ -3,7 +3,7 @@ spring:
     name: currencyrateclient
 
 server:
-  port: 8080
+  port: 0
   
 app:
   rest:
